@@ -3,6 +3,8 @@ body, html {
     height: 100%;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 * {
@@ -11,6 +13,50 @@ body, html {
 
 main {
     background-color: white;
+    display: grid;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 160px;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.sidebar #sidebar-header {
+    font-size: 25px;
+    font-family: fantasy;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar a {
+    color:black;
+    font-size: 20px;
+    display: block;
+}
+
+.sidebar a:hover {
+    color:darkgoldenrod;
+}
+
+header {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+footer {
+    background-color: powderblue;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
 }
 
 .sticker-back {
@@ -23,6 +69,7 @@ main {
     justify-content: center;
     padding-top: 5px;
 }
+
 .sticker {
     background-color: red;
     display: grid;
@@ -41,7 +88,7 @@ main {
     text-transform: uppercase;
 }
 
-.sticker .my_name_is {
+.sticker .my-name-is {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     display: flex;
