@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>A name tag project</header>
-        <main>
+    <script type="module" src="app.js"></script>
+        <main id="change-my-color">
             <section class = "sidebar">
                 <strong id = "sidebar-header">Sidebar</strong>
                 <br>
@@ -21,11 +21,25 @@
                 <section class = "sticker">
                     <div class = "greeting">Hello</div>
                     <div class = "my-name-is">my name is</div>
-                    <div class = "name">Christiane</div>
-                    <div class = "pronouns">(she/her)</div>
+                    <div class = "name" id = "name">Christiane</div>
+                    <div class = "pronouns" id="pronouns">(she/her)</div>
                 </section>
             </section>
+            <section>
+                <input id='name-input'>
+                <br>
+                <button id='name-button'>Change my name!</button>
+                <br>
+                <input id='pronoun-input'>
+                <br>
+                <button id='pronoun-button'>Change my pronouns!</button>
+                <br>
+                <button id='font-button'>Change my font!</button>
+                <br>
+                <button id='blue-button'>Turn me blue!</button>
+                <button id='pink-button'>Turn me pink!</button>
+                <button id='sage-button'>Turn me green!</button>
+            </section>
         </main>
-    <footer>March 2021</footer>
 </body>
 </html>

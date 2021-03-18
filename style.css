@@ -15,6 +15,7 @@ main {
     background-color: white;
     display: grid;
     justify-content: center;
+    text-align: center;
 }
 
 .sidebar {
@@ -45,27 +46,14 @@ main {
     color:darkgoldenrod;
 }
 
-header {
-    background-color: powderblue;
-    display: flex;
-    justify-content: center;
-    font-family: fantasy;
-}
-
-footer {
-    background-color: powderblue;
-    display: flex;
-    justify-content: center;
-    font-family: fantasy;
-}
 
 .sticker-back {
     background-color: rgb(185, 180, 180);
     width: 300px;
     height: 200px;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
     align-items: center;
+    grid-template-rows: 1fr 2fr 1fr;
     justify-content: center;
     padding-top: 5px;
 }
@@ -112,4 +100,19 @@ footer {
     align-items: center;
     font-family: cursive;
     font-size: 20px;
+}
+
+#name-button, #pronoun-button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:lightgoldenrodyellow;
+    margin: 20px;
+}
+
+#name-input, #pronoun-input {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
 }
