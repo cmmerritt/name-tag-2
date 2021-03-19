@@ -9,7 +9,7 @@
 </head>
 <body>
     <script type="module" src="app.js"></script>
-        <main id="change-my-color">
+        <main>
             <section class = "sidebar">
                 <strong id = "sidebar-header">Sidebar</strong>
                 <br>
@@ -18,7 +18,7 @@
                 <a href = "#">Link 3</a>
             </section>
             <section class = "sticker-back">
-                <section class = "sticker">
+                <section class = "sticker" id="sticker">
                     <div class = "greeting">Hello</div>
                     <div class = "my-name-is">my name is</div>
                     <div class = "name" id = "name">Christiane</div>
@@ -30,6 +30,7 @@
                 <br>
                 <button id='name-button'>Change my name!</button>
                 <br>
+                <p>You have changed your name <span id="total-button-click-display">0</span> times</p>
                 <input id='pronoun-input'>
                 <br>
                 <button id='pronoun-button'>Change my pronouns!</button>
